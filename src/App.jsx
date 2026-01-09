@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx';
 import FooterSection from './components/FooterSection/FooterSection.jsx';
 import Home from './pages/Home.jsx';
-import CaseStudies from './pages/caseStudies.jsx';
+import CaseStudies from './pages/CaseStudies.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 
