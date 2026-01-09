@@ -1,0 +1,134 @@
+.audit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0;
+  overflow: hidden; 
+}
+
+.floating-bars-top,
+.floating-bars-bottom {
+  width: 100%;
+  background-color: #ff5722; 
+  color: white;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.floating-text {
+  display: inline-block;
+  animation: floatText 20s linear infinite;
+  padding-right: 2rem; 
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+.audit-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.audit-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.highlight-text {
+  color: #ff5722; 
+}
+
+.audit-form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px; 
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.email-input {
+  flex-grow: 1;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.email-input::placeholder {
+  color: #a0a0a0;
+}
+
+.audit-button {
+  background-color: #ff5722; 
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.audit-button:hover {
+  background-color: #e64a19; 
+}
+
+.audit-icon {
+  width: 20px;
+  height: 20px;
+ 
+}
+
+
+@media (max-width: 768px) {
+  .audit-content {
+    padding: 2rem 1rem;
+  }
+
+  .audit-title {
+    font-size: 2rem;
+  }
+
+  .floating-text {
+    font-size: 0.75rem;
+    padding-right: 1rem;
+    animation-duration: 15s; 
+  }
+
+  .audit-form {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .email-input,
+  .audit-button {
+    width: 100%;
+    max-width: none; 
+  }
+}

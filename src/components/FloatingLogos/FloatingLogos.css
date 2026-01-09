@@ -1,0 +1,48 @@
+.floating-logos-section {
+  padding: 4rem 2rem;
+  background-color: white;
+  overflow: hidden; 
+}
+
+.logos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap; 
+  white-space: nowrap;
+  animation: floatLogos 15s linear infinite; 
+}
+
+.floating-logo {
+  height: 40px; 
+  margin: 0 2rem;
+  filter: grayscale(100%); 
+  opacity: 0.6; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.floating-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+@keyframes floatLogos {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .floating-logo {
+    height: 30px; 
+    margin: 0 1rem; 
+  }
+
+  .logos-container {
+    animation-duration: 20s; 
+  }
+}

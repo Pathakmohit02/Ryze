@@ -1,0 +1,172 @@
+.orange-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff5722;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+
+.left-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.content-block {
+  background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(5px); 
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: left;
+}
+
+.block-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.account-management-video,
+.creative-optimization-video,
+.roas-improvements-video {
+  width: 100%;
+  height: 220px; 
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  background-color: #333;
+}
+.right-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
+.next-gen {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.right-title {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.email-signup-right {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1.5rem;
+}
+
+.email-signup-right .email-input {
+  flex-grow: 1;
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.email-signup-right .submit-email-button {
+  background-color: white;
+  color: #2563EB;
+  padding: 1rem;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column; 
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .left-blocks,
+  .right-content {
+    min-width: 90%; 
+    max-width: 90%;
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .right-title {
+    font-size: 3rem; 
+    text-align: center; 
+  }
+
+  .email-signup-right {
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .block-title {
+    font-size: 1rem;
+  }
+
+  .account-management-video,
+  .creative-optimization-video,
+  .roas-improvements-video {
+    height: 150px;
+  }
+
+  .right-title {
+    font-size: 2.5rem;
+  }
+
+  .email-signup-right .email-input,
+  .email-signup-right .submit-email-button {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .email-signup-right .submit-email-button {
+    border-radius: 0.5rem;
+  }
+
+  .email-signup-right {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .email-signup-right .email-input {
+    border-radius: 0.5rem;
+  }
+}
