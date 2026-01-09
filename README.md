@@ -18,4 +18,4 @@
 - Mobile-first responsive design
 
 ### Live Demo
-
+https://ryze-ai-theta.vercel.app/
